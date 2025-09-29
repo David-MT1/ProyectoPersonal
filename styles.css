@@ -1,3 +1,19 @@
-th {
-    color: aqua;
+table{
+    color: rgba(255, 83, 0);
+}
+h1 {
+        color: blueviolet;
+}
+.menu {
+    color:black;
+}
+#seccionMenu{
+    border: 10px solid rgba(255, 83, 0);
+    color: wheat;
+}
+strong{
+    color: rgba(255, 83, 0);
+}
+hr{
+    color: rgba(255, 83, 0);
 }
