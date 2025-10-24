@@ -3,12 +3,12 @@ body{
     display: grid;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
+    grid-template-columns: auto;
 }
 h1{
     text-align: center;
 }
 form{
-    grid-template-columns: center;
     text-align: center;
     position: fixed;
     width: auto;
