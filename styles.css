@@ -1,15 +1,19 @@
 body{
     margin: 0px;
     font-family: sans-serif;
+    display: grid;
+    grid-template-columns: auto ;
 }
 .seccion-nav{
     display: flex;
     flex:1;
     background-color: #ffffff;
     position: fixed;
+    top:0;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    height: 50px;
     gap: 20px;
 }
 .item-nav{
@@ -32,4 +36,35 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+/*SECCION MAIN*/
+.seccion-promos{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin: 5px;
+    margin-top: 50px;
+}
+.div-promos{
+    width: 100%;
+    height: 150px;
+}
+.div-promos:hover{
+    box-shadow: 0px 10px 20px rgba(255, 83, 0, 0.6);
+    border: 0.1px solid rgba(255, 83, 0);
+    border-radius: 4px;
+}
+
+
+.seccion-platos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.div-platos{
+    text-align: center;    
+
+}
+.div-platos:hover{
+    box-shadow: 0px 10px 20px rgba(255, 83, 0, 0.6);
+    border-radius: 8px;
 }
