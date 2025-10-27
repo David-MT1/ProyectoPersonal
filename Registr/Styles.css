@@ -1,21 +1,56 @@
 body{
-    background-color: rgb(245, 222, 179);
+    margin: 0px;
+    font-family: sans-serif;
     display: grid;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto ;
 }
-h1{
+.seccion-nav{
+    display: flex;
+    flex:1;
+    background-color: #ffffff;
+    position: fixed;
+    top:0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    gap: 5px;
+}
+.item-nav{
+    color: rgba(255, 83, 0);
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
     text-align: center;
+    flex: 1;
 }
+.item-nav:hover{
+    color: rgba(255, 83, 0);
+    box-shadow: 0 4px 10px rgba(255, 83, 0, 0.6);
+}
+.item-nav img{
+    height: 30px;
+    width: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*MAIN*/
+main{
+    display: grid;
+  place-items: center; /* Centra en ambos ejes de forma abreviada */
+  height: 300px;  /* Centra verticalmente */
+}
+
 form{
     text-align: center;
-    position: fixed;
-    width: auto;
-    height: auto;
     background-color: rgba(255, 83, 0);
     padding: 50px;
     border-radius: 8px;
+
 }
 #registrar{
     
