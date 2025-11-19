@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Rye", serif;
     color: black;
 }
 
@@ -84,7 +90,7 @@ main{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px;
-    padding: 20px;
+    padding: 40px;
 }
 .div-platos{
     text-align: center; 
@@ -99,23 +105,92 @@ main{
 
 
 /*Registro*/
-.div-registro{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.form-registro{
-    border-radius: 20px;
-    margin: 30% 20%;
-    padding: 20px;
-    background-color: rgba(255, 83, 0);
-    color: black;
-    
+.contenedor-registro{
+    border: 1px solid;
+    width: 1200px;
+    height: 800px;
+    display: flex;
 }
-.form-registro:hover{
+.contenedor-form{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contenedor-form form{ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social-registro{
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.social-registro ion-icon{
+    border: 1px solid rgba(255, 83, 0, 0.6);
+    border-radius: 5px;
+    padding: 8px;
+    gap: 30px;
+
+}
+.social-registro ion-icon:hover{
     transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(255, 83, 0, 0.6);
-    
+    box-shadow: 0px 0px 10px rgba(255, 83, 0, 0.3);
+
 }
+
+.contenedor-input{
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    background-color: rgba(255, 83, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contenedor-input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.contenedor-form a{
+    color: rgba(255, 83, 0);
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contenedor-form button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Rye", serif;
+    width: 170px;
+    height: 40px;
+    background-color: rgba(255, 83, 0);
+    color: white;
+}
+/*ANIMACION DEL FORMULARIO*/
 
 /*Local*/
 .main-local{
@@ -135,6 +210,7 @@ main{
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
 
 }
 

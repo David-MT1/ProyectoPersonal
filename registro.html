@@ -38,26 +38,86 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="div-registro">
-            <form action="#" class="form-registro">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" id="nombre" placeholder="Carmen Cordova"><br><br>
+    <main class="main-registro">
+        <div class="contenedor-registro">
+            <div class="contenedor-form">
+                <form class="iniciar-sesion">
+                    <h2>Iniciar Sesión</h2>
 
-                <label for="direccion">Ingresa tu dirección:</label><br>
-                <input type="text" name="direccion" id="direccion" placeholder="Av. Aviacion 1011"><br><br>
+                    <div class="social-registro">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
 
-                <label for="telf">Ingresa tu telefono</label><br>
-                <input type="text" id="telf" name="telf" placeholder="900843668" pattern="{9}"><br>
+                    <span>Use su correo y contraseña</span>
 
-                <button type="submit" id="registrar">Registrarse e ingresar</button>
-            </form>
-        </div>
-        <div class="div-imagenes">
-            <div>
-                <img src="" alt="">
+                    <div class="contenedor-input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="correo" id="correo-login" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password-login" placeholder="Contraseña" required>
+                    </div>
+
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button type="submit">INICIAR SESIÓN</button>
+                </form>
             </div>
+
+
+            <div class="contenedor-form">
+                <form class="registrarse">
+                    <h2>Registrarse</h2>
+
+                    <div class="social-registro">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+
+                    <span>Ingrese sus datos personales</span>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="correo" id="correo-registro" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password-registro" placeholder="Contraseña" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="confirmar_password" id="confirmar-password" placeholder="Confirmar contraseña" required>
+                    </div>
+
+                    <button type="submit">REGISTRARSE</button>
+                </form>
+            </div>
+
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </main>
     <footer>
         <div class="seccion-footer">
