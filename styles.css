@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     font-family:'Courier New', Courier, monospace;
-    color: white;
+    color: black;
 }
 
 /*SECCION HEADER*/
@@ -51,14 +51,17 @@ body{
 .item-nav-img:hover{
     transform: scale(1.05);
 }
+
+
 /*SECCION MAIN*/
 main{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(49, 48, 48);
+    background-color: white;
     height: 1000px;
 }
+/*Index*/
 .seccion-promos{
     display: flex;
     justify-content: space-evenly;
@@ -94,41 +97,92 @@ main{
     transform: scale(1.1);
 }
 
+
+/*Registro*/
 .div-registro{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50% 50%;
 }
 .form-registro{
-    border-radius: px;
+    border-radius: 20px;
     margin: 30% 20%;
     padding: 20px;
     background-color: rgba(255, 83, 0);
-    color: white;
+    color: black;
     
 }
 .form-registro:hover{
     transform: scale(1.05);
     box-shadow: 0px 10px 20px rgba(255, 83, 0, 0.6);
+    
+}
+
+/*Local*/
+.main-local{
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-areas: 
+        "map info"
+        "dudas dudas";
+    gap: 20px; 
+    padding: 30px;
+}
+
+.item-map-local{
+    grid-area: map;
+    background-color: rgba(255, 83, 0);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 
 }
+
+.item-info-local{
+    grid-area: info;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-dudas-local{
+    grid-area: dudas;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: stretch; /* CLAVE: Hace que todas las tarjetas tengan la misma altura */
+    text-align: center;
+}
+.dudas-local{
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /*SECCION FOOTER*/
 footer{
-    background-color: rgb(49, 48, 48);
+    background-color: white;
+    border-top: black solid 1px;
 }
 .seccion-footer{
     display: flex;
     flex-direction: row;
-    background-color: rgb(49, 48, 48);
-    border-top: 0.2px solid rgb(49, 48, 48);
-    justify-content: space-around;  
-
+    justify-content: space-around; 
+    padding-top: 40px;
 }
 .div-footer img{
     width: 200px;
     height: 200px;
     display: block; /* evita espacios fantasmas por inline-block */
 }
-footer, .seccion-footer, .div-footer, h3, h5, dl, dt, dd {
+.div-footer, h3, h5, dl, dt, dd {
     margin: 0;
     padding: 0;
+}
+footer p{
+    text-align: center;
 }
