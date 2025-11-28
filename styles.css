@@ -10,63 +10,107 @@ body{
     color: black;
 }
 
-/*SECCION HEADER*/
-.seccion-nav{
+
+/* SECCION HEADER */
+.header {
+    top: 0;
+    left: 0; 
     display: flex;
-    flex:1;
-    background-color: rgba(255, 83, 0);
-    position: fixed;
-    top:0;
-    align-items: center;
-    justify-content: space-evenly;
+    background-color: rgb(255, 83, 0); 
+    padding: 10px;
+    height: 90px;
     width: 100%;
-    height: 50px;
-    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+/* LOGO */
+.header .logo {
     
+    align-items: center;
+    justify-content: center;
 }
-.item-nav{
+
+.header .logo img {
+    height: 50px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+    margin-left: 100px;
+}
+
+.header .logo img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 5px 10px rgba(27, 9, 0, 0.6)); 
+}
+
+.header .links-nav {
+    list-style: none;
+    display: flex; 
+    gap: 40px;
+}
+
+.header .links-nav li {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.header .links-nav a {
+    text-decoration: none;
+    font-size: 23px;
     color: white;
-    background-color: rgba(255, 83, 0);
-    padding: 5px;
-    border-radius: 4px;
-    text-align: center;
-    flex: 1;
+    display: block;
+    padding: 10px 20px;
 }
-.item-nav:hover{
-    color: rgba(255, 83, 0);
+
+.header .links-nav li:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0px 5px 10px rgba(27, 9, 0, 0.6);
+}
+
+/* BOTÓN */
+.header .btn button {
+    font-family: "Rye", serif;
+    font-size: 23px;
+    border: none;
+    border-radius: 12px;
     background-color: white;
-    box-shadow: 0 4px 10px rgba(255, 83, 0, 0.6);
+    padding: 10px; 
+    color: rgb(255, 83, 0);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.item-nav a{
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
-    height: 100%;
-}
-.item-nav-img img{
-    width: 100px;
-    height: auto;
-    margin-left: 30px;
-    margin-right: 10px;
-    padding: 0px;
-}
-
-.item-nav-img:hover{
+.header .btn button:hover {
     transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(27, 9, 0, 0.6);
 }
 
+#perfil {
+    color: white;       
+    font-size: 50px;     
+    display: flex;     
+    transition: transform 0.3s ease;
+    margin: 30px;
+}
 
+#perfil:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
 /*SECCION MAIN*/
-main{
-    margin-top: 50px;
+main {
+    margin-top: 110px;
     display: flex;
     flex-direction: column;
     background-color: white;
     height: 1000px;
+    position: relative;
 }
+
 /*Index*/
 .seccion-promos{
     display: flex;
@@ -190,53 +234,124 @@ main{
     background-color: rgba(255, 83, 0);
     color: white;
 }
-/*ANIMACION DEL FORMULARIO*/
 
-/*Local*/
-.main-local{
-    display: grid;
-    grid-template-columns: auto 65%;
-    grid-template-areas: 
-        "map info"
-        "dudas dudas";
-    gap: 20px; 
-    padding: 30px;
-}
-
-.item-map-local{
-    grid-area: map;
-    background-color: rgba(255, 83, 0);
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    
-
-}
-
-.item-info-local{
-    grid-area: info;
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.item-dudas-local{
-    grid-area: dudas;
+/* LOCAL */
+.main-local {
+    max-width: 100%;
+    padding: 0 20px;
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    gap: 20px;
-    justify-content: space-evenly;
-    align-items: stretch; /* CLAVE: Hace que todas las tarjetas tengan la misma altura */
-    text-align: center;
+    flex-direction: column;
+    gap: 60px; 
 }
-.dudas-local{
-    flex: 1;
-    padding: 20px;
+
+.item-map-container {
+    display: flex;
+    height: 500px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.item-map-local {
+    flex: 1;
+    background-color: rgb(255, 83, 0);
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-map-local h3 {
+    font-family: "Rye", serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.item-map-local iframe {
+    border-radius: 10px;
+    flex-grow: 1; 
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: white;
+}
+
+.item-info-local {
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.item-info-local img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 20px;
+}
+
+
+.titulo-dudas {
+    text-align: center;
+    font-family: "Rye", serif;
+    font-size: 35px;
+    color: rgb(255, 83, 0);
+    margin-bottom: 30px;
+}
+
+.contenedor-acordeon {
+    max-width: 800px; 
+    margin: 0 auto;   
+}
+
+/* Estilo de la caja cerrada */
+details.dudas-local {
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details.dudas-local[open] {
+    box-shadow: 0 8px 20px rgba(255, 83, 0, 0.15); 
+    border-color: rgba(255, 83, 0, 0.3);
+}
+
+summary.panel-dudas-local {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+summary.panel-dudas-local::-webkit-details-marker {
+    display: none;
+}
+
+summary .icono-abrir {
+    font-size: 24px;
+    color: rgb(255, 83, 0);
+    transition: transform 0.3s ease;
+}
+
+details[open] summary .icono-abrir {
+    transform: rotate(180deg);
+}
+
+
+.panel-contenido-local {
+    padding: 0 20px 20px 20px;
+    color: #555;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+    animation: fadeIn 0.4s ease;
 }
 
 /*SECCION FOOTER*/
