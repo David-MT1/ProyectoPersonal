@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=123.0">
-    <title>D'CHIO</title>
-    <link rel =" icon" type="image/png" href="Imágenes/loguitoDchio.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,46 +21,36 @@
             </ul>
         </nav>
         <a href="#" class="btn"><button>D'CHIO Night</button></a>
-        <a id="perfil" href="perfil.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+        <a id="perfil" href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
     </header>
-    <main>
-
-        <section class="seccion-platos">
-            <a href="pedido.html">
-                <div class="div-platos">
-                    <h3>este es tu plato</h3>
-                    <p>caracteristicas</p>
-                    <button type="submit">agregar al carrito</button>
+    <main class="main-pedido">
+        <div class="contenedor-pedido">
+            <div class="img-pedido">
+                <img src="Imágenes/chicharron.png" alt="img chicharron">
+            </div>
+            <div class="info-pedido">
+                <div class="datos-pedido">
+                    <h3 id="Nombre-pedido">Nombre del pedido</h3>
+                    <h3 id="precio-pedido">Precio pedido</h3>
                 </div>
-            </a>
-            <div class="div-platos">
-                <h3>este es tu plato</h3>
-                <p>caracteristicas</p>
-                <button type="submit">agregar al carrito</button>
+                <div class="caracteristicas-contenedor-pedido">
+                    <div class="caracteristicas-pedido">
+                        <p>aaaa</p>
+                    </div>
+                    <div class="caracteristicas-pedido">
+                        <p>aaaa</p>
+                    </div>
+                    <div class="caracteristicas-pedido">
+                        <p>aaaa</p>
+                    </div>
+                    <div class="caracteristicas-pedido">
+                        <p>aaaa</p>
+                    </div>
+                </div>
             </div>
-            <div class="div-platos">
-                <h3>este es tu plato</h3>
-                <p>caracteristicas</p>
-                <button type="submit">agregar al carrito</button>
-            </div>
-            <div class="div-platos">
-                <h3>este es tu plato</h3>
-                <p>caracteristicas</p>
-                <button type="submit">agregar al carrito</button>
-            </div>
-            <div class="div-platos">
-                <h3>este es tu plato</h3>
-                <p>caracteristicas</p>
-                <button type="submit">agregar al carrito</button>
-            </div>
-            <div class="div-platos">
-                <h3>este es tu plato</h3>
-                <p>caracteristicas</p>
-                <button type="submit">agregar al carrito</button>
-            </div>
-        </section>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+
+        
     </main>
     <footer>
         <div class="seccion-footer">
@@ -97,7 +86,7 @@
         <br>
 
     </footer>
-    
-    
+
+
 </body>
 </html>

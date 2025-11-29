@@ -384,6 +384,7 @@ details[open] summary .icono-abrir {
     gap:20px;
     overflow: hidden;
 }
+
 .bar-perfil{
     display: flex;
     flex-direction: column;
@@ -456,8 +457,86 @@ details[open] summary .icono-abrir {
 }
 .item-historial-perfil:hover{
     transform: scale(1.03);
+}
+
+
+.info-perfil{
+    background-color: rgb(255, 83, 0);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+
+
+}.items-info-perfil{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+
+.item-info-perfil{
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
 
 }
+/* PEDIDO */
+.main-pedido{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedor-pedido{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(255, 83, 0);
+    height: 800px;
+    width: 95%;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+}
+.img-pedido{
+    width: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+.img-pedido img{
+    width: 100%;
+    border-radius: 20px ;
+}
+.info-pedido{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+}
+.datos-pedido{
+    font-size: 300%;
+
+}
+.caracteristicas-contenedor-pedido{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+.caracteristicas-pedido{
+    background-color: white;
+    color: rgb(255, 83, 0);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
 
 /*SECCION FOOTER*/
 footer{
