@@ -10,19 +10,30 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="index.html"><img src="Imágenes/bannerDchio-Editado.png" alt="logo"></a>
+            <a href="index.html">
+                <img src="Imágenes/bannerDchio-Editado.png" alt="logo">
+            </a>
         </div>
+
         <nav class="seccion-nav">
             <ul class="links-nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="promociones.html">Promociones</a></li>
                 <li><a href="local.html">Local</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="#">Carrito</a></li>
-            </ul>
+                </ul>
         </nav>
-        <a href="#" class="btn"><button>D'CHIO Night</button></a>
-        <a id="perfil" href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil" style="font-size: 14px; margin-left: 5px;">Ingresar</span>
+            </a>
+        </div>
     </header>
     <main class="main-local">
     
