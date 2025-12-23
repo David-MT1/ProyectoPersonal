@@ -106,5 +106,5 @@ class ServidorDChio(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = HTTPServer(("localhost", 8000), ServidorDChio)
-    print("🚀 Servidor D'CHIO activo en http://localhost:8000")
+    print("Servidor D'CHIO activo en http://localhost:8000")
     server.serve_forever()
