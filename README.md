@@ -7,9 +7,9 @@ Sigue estos pasos en orden para poner en marcha la aplicación:
 Abre una terminal y clona el repositorio en tu máquina local:
 Bash
 
-git clone https://github.com/tu-usuario/PROYECTO-PERSONAL.git
+https://github.com/David-MT1/ProyectoPersonal
 
-cd PROYECTO-PERSONAL
+cd ProyectoPersonal
 
 2. Configurar la Base de Datos
 
