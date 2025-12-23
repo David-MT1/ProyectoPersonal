@@ -28,8 +28,6 @@ async function cargarPromociones() {
             contenedor.appendChild(tarjeta);
         });
 
-        // --- ESTO ASEGURA QUE SE VEAN APENAS CARGUEN ---
-        // Forzamos el check de scroll una vez que las tarjetas ya existen en el HTML
         setTimeout(() => {
             window.dispatchEvent(new Event('scroll'));
         }, 100);
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarPromociones();
 });
 
-/*-- LÓGICA DE SCROLL (Mantenla igual porque ya te funciona) --*/
 window.addEventListener('scroll', function() {
     const tarjetas = document.querySelectorAll('.tarjeta-lista');
     const puntoActivacion = window.innerHeight / 1.1;
