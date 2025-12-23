@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=123.0">
+    <title>D'CHIO</title>
+    <link rel =" icon" type="image/png" href="Imagenes/loguitoDchio.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+        <nav class="seccion-nav">
+            <ul class="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="local.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil">Ingresar</span>
+            </a>
+        </div>
+    </header>
+<main class="main-perfil">
+    <section class="bar-perfil">
+        <a id="perfil-img" href="perfil.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </a>
+        <ul>
+            <li><strong>Nombre:</strong> <span id="db-nombre">Nombre</span></li>
+            <li><strong>Apellido:</strong> <span id="db-apellido">Apellido</span></li>
+            <li><strong>Teléfono:</strong> <span id="db-telefono">Telefono</span></li>
+            <li><strong>Correo:</strong> <span id="db-correo">Correo</span></li>
+            <li><strong>Dirección:</strong> <span id="db-direccion">Direccion</span></li>
+        </ul>
+        <button onclick="cerrarSesion()" class="btn-cerrar-sesion">
+            <ion-icon name="log-out-outline"></ion-icon>
+            Cerrar Sesión
+        </button>
+    </section>
+
+    <section class="historial-perfil">
+        <h3>TUS ÚLTIMOS PEDIDOS FUERON</h3>
+        <div class="items-historial" id="contenedor-pedidos">
+            <div class="item-historial-perfil">
+                <ion-icon name="fast-food-outline"></ion-icon>
+                <p>Pedido #001</p>
+                <small id="db-fecha-1">Hace 2 días</small>
+            </div>
+            <div class="item-historial-perfil">
+                <ion-icon name="fast-food-outline"></ion-icon>
+                <p>Pedido #002</p>
+                <small id="db-fecha-2">Hace 5 días</small>
+            </div>
+            <div class="item-historial-perfil">
+                <ion-icon name="fast-food-outline"></ion-icon>
+                <p>Pedido #003</p>
+                <small id="db-fecha-3">Hace 1 semana</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-perfil">
+        <h3>CONTACTANOS:</h3>
+        <div class="items-info-perfil">
+            <div class="item-info-perfil">
+                <ion-icon name="map-outline"></ion-icon>
+                <p>Cayma, Arequipa</p>
+            </div>
+            <div class="item-info-perfil">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>987 654 321</p>
+            </div>
+            <div class="item-info-perfil">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>@dchio_pizzas</p>
+            </div>
+            <div class="item-info-perfil">
+                <ion-icon name="heart-outline"></ion-icon>
+                <p>¡Gracias por tu preferencia!</p>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="seccion-footer">
+            <div class="div-footer">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
+            </div>
+
+            <div class="div-footer">
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
+            </div>
+
+            <div class="div-footer">
+                <h5>Ayuda</h5>
+                <p>Términos y condiciones</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 D'CHIO</p>
+    </footer>
+    
+        <script src="scriptDchio.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="scriptDchio.js"></script>
+        <script src="pedido.js"></script>
+        <script src="index.js"></script>
+        <script src="perfil.js"></script>
+</body>
+</html>

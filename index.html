@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=123.0">
+    <title>D'CHIO</title>
+    <link rel ="icon" type="image/png" href="Imagenes/loguitoDchio.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+        <nav class="seccion-nav">
+            <ul class="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="local.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil">Ingresar</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+    <h1 class="titulo-principal">D'CHIO RESTAURANTE</h1>
+
+    <div class="contenedor-busqueda">
+        <input type="text" id="inputBuscador" placeholder="¿Qué se te antoja hoy?">
+    </div>
+
+    <div id="contenedorPlatos" class="seccion-platos"></div>
+    </main>
+    <footer>
+        <div class="seccion-footer">
+            <div class="div-footer">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
+            </div>
+
+            <div class="div-footer">
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
+            </div>
+
+            <div class="div-footer">
+                <h5>Ayuda</h5>
+                <a href="terminosYcondiciones.html"><p>Términos y condiciones</p></a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 D'CHIO</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptDchio.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

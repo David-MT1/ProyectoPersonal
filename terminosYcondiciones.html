@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=123.0">
+    <title>D'CHIO</title>
+    <link rel ="icon" type="image/png" href="Imagenes/loguitoDchio.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+        <nav class="seccion-nav">
+            <ul class="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="local.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil">Ingresar</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="contenedor-terminos">
+        <section class="caja-legal">
+            <h1 class="titulo-legal">Términos y Condiciones</h1>
+            <p class="ultima-actualizacion">Última actualización: 24 de Mayo, 2024</p>
+
+            <div class="contenido-legal">
+                <article class="seccion-legal">
+                    <h2>1. Aceptación de Términos</h2>
+                    <p>Al acceder y utilizar el sitio web de <strong>D'CHIO</strong>, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso. Si no está de acuerdo con alguna parte de estos términos, le rogamos no utilizar nuestros servicios.</p>
+                </article>
+
+                <article class="seccion-legal">
+                    <h2>2. Pedidos y Pagos</h2>
+                    <p>Todos los pedidos realizados a través de nuestra plataforma están sujetos a disponibilidad de insumos. Los precios están expresados en Soles (S/) e incluyen IGV. Nos reservamos el derecho de modificar los precios sin previo aviso.</p>
+                </article>
+
+                <article class="seccion-legal">
+                    <h2>3. Tiempos de Entrega</h2>
+                    <p>D'CHIO se compromete a entregar los pedidos en un rango de 30 a 60 minutos dependiendo de la zona de entrega y la carga de cocina. Factores externos como el clima o el tráfico pueden afectar estos tiempos.</p>
+                </article>
+
+                <article class="seccion-legal">
+                    <h2>4. Políticas de Cancelación</h2>
+                    <p>Solo se aceptarán cancelaciones de pedidos dentro de los primeros 5 minutos después de haber realizado la compra, siempre y cuando el pedido no haya entrado en proceso de preparación.</p>
+                </article>
+            </div>
+
+            <div class="footer-legal">
+                <p>Si tiene dudas sobre estos términos, contáctenos a: <strong>soporte@dchio.com</strong></p>
+                <a href="index.html" class="boton-volver">Entendido, volver al inicio</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="seccion-footer">
+            <div class="div-footer">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
+            </div>
+
+            <div class="div-footer">
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
+            </div>
+
+            <div class="div-footer">
+                <h5>Ayuda</h5>
+                <a href="terminosYcondiciones.html">Términos y condiciones</a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 D'CHIO</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptDchio.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

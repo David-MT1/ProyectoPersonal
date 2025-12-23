@@ -1,0 +1,49 @@
+{
+  "platos": [
+    {
+      "categoria": "Pastel de Papa",
+      "variantes": [
+        {"id": 101, "nombre": "Pastel de Papa Simple", "precio": 12.00, "descripcion": "Porción clásica individual", "imagen": "Imagenes/pastel-simple.jpeg"},
+        {"id": 102, "nombre": "Pastel de Papa con Queso Extra", "precio": 15.00, "descripcion": "Doble capa de queso fundido", "imagen": "Imagenes/pastel-queso.jpeg"},
+        {"id": 103, "nombre": "Pastel de Papa Familiar", "precio": 45.00, "descripcion": "Para 4 personas", "imagen": "Imagenes/pastel-familiar.jpeg"},
+        {"id": 104, "nombre": "Pastel de Papa con Carne", "precio": 18.00, "descripcion": "Relleno de carne picada", "imagen": "Imagenes/pastel-carne.jpeg"}
+      ]
+    },
+    {
+      "categoria": "Chicharrón",
+      "variantes": [
+        {"id": 201, "nombre": "Chicharrón Personal", "precio": 20.00, "descripcion": "250g de cerdo crocante", "imagen": "Imagenes/chicharron-p.jpeg"},
+        {"id": 202, "nombre": "Chicharrón Especial", "precio": 28.00, "descripcion": "Con camote y zarza criolla", "imagen": "Imagenes/chicharron-e.jpeg"},
+        {"id": 203, "nombre": "Fuente de Chicharrón", "precio": 55.00, "descripcion": "1kg para compartir", "imagen": "Imagenes/chicharron-f.jpeg"},
+        {"id": 204, "nombre": "Sándwich de Chicharrón", "precio": 15.00, "descripcion": "En pan artesanal", "imagen": "Imagenes/chicharron-s.jpg"}
+      ]
+    },
+    {
+      "categoria": "Salchipapa",
+      "variantes": [
+        {"id": 301, "nombre": "Salchi Clásica", "precio": 10.00, "descripcion": "Hot dog y papas", "imagen": "Imagenes/salchi-c.jpeg"},
+        {"id": 302, "nombre": "Salchi Especial", "precio": 14.00, "descripcion": "Con huevo y queso", "imagen": "Imagenes/salchi-e.webp"},
+        {"id": 303, "nombre": "Salchi DChio", "precio": 18.00, "descripcion": "Con todas las cremas y tocino", "imagen": "Imagenes/salchi-d.png"},
+        {"id": 304, "nombre": "Salchi Monster", "precio": 25.00, "descripcion": "Tamaño gigante", "imagen": "Imagenes/salchi-m.jpeg"}
+      ]
+    },
+    {
+      "categoria": "Pollo Broaster",
+      "variantes": [
+        {"id": 401, "nombre": "1/4 de Pollo Broaster", "precio": 16.00, "descripcion": "Pierna o encuentro", "imagen": "Imagenes/broaster-14.png"},
+        {"id": 402, "nombre": "Broaster Especial", "precio": 20.00, "descripcion": "Con ensalada y cremas", "imagen": "Imagenes/broaster-e.jpeg"},
+        {"id": 403, "nombre": "Dúo Broaster", "precio": 30.00, "descripcion": "2 presas + papas", "imagen": "Imagenes/broaster-d.jpeg"},
+        {"id": 404, "nombre": "Mostrito Broaster", "precio": 22.00, "descripcion": "Con arroz chaufa", "imagen": "Imagenes/broaster-m.jpg"}
+      ]
+    },
+    {
+      "categoria": "Pizza",
+      "variantes": [
+        {"id": 501, "nombre": "Pizza Americana", "precio": 25.00, "descripcion": "Jamón y queso mozarella", "imagen": "Imagenes/pizza-a.jpeg"},
+        {"id": 502, "nombre": "Pizza Pepperoni", "precio": 28.00, "descripcion": "Abundante pepperoni", "imagen": "Imagenes/pizza-p.jpeg"},
+        {"id": 503, "nombre": "Pizza Hawaiana", "precio": 28.00, "descripcion": "Piña y durazno", "imagen": "Imagenes/pizza-h.jpeg"},
+        {"id": 504, "nombre": "Pizza DChio Suprema", "precio": 35.00, "descripcion": "Carnes, vegetales y extra queso", "imagen": "Imagenes/pizza-s.jpeg"}
+      ]
+    }
+  ]
+}

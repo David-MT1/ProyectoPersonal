@@ -1,0 +1,39 @@
+{
+  "promociones": [
+    {
+      "id": 901,
+      "nombre": "PROMO PERSONAL DCHIO",
+      "descripcion": "Disfruta de una pizza personal más una gaseosa helada. El combo perfecto para tu almuerzo.",
+      "precio": 15.00,
+      "imagen": "Imagenes/promo1.jpeg"
+    },
+    {
+      "id": 902,
+      "nombre": "COMBO FAMILIAR",
+      "descripcion": "Dos pizzas grandes de cualquier sabor para compartir con toda la familia este fin de semana.",
+      "precio": 45.00,
+      "imagen": "Imagenes/promo2.jpeg"
+    },
+    {
+      "id": 903,
+      "nombre": "BANQUETE AMIGOS",
+      "descripcion": "3 pizzas medianas + 1 porción de pan al ajo de la casa. ¡No te lo pierdas!",
+      "precio": 60.00,
+      "imagen": "Imagenes/promo3.jpeg"
+    },
+    {
+      "id": 904,
+      "nombre": "DUO ESPECIAL",
+      "descripcion": "Combina tus dos sabores favoritos en una sola pizza gigante a un precio increíble.",
+      "precio": 38.50,
+      "imagen": "Imagenes/promo4.jpeg"
+    },
+    {
+      "id": 905,
+      "nombre": "PROMO CUMPLEAÑERA",
+      "descripcion": "Si es tu cumple, llévate una pizza mediana gratis por la compra de una grande.",
+      "precio": 32.00,
+      "imagen": "Imagenes/promo5.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'CHIO - Registro</title>
+
+    <!-- CSS desde static -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+        <nav class="seccion-nav">
+            <ul class="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="local.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil">Ingresar</span>
+            </a>
+        </div>
+    </header>
+
+<main class="main-registro">
+    <div class="contenedor-registro">
+        <div class="contenedor-form">
+
+            <form class="formulario"
+                  id="form-registro"
+                  method="POST"
+                  action="http://localhost:8000/registro">
+
+                <!-- TÍTULO -->
+                <h2>Registrarse</h2>
+                <span>Ingrese sus datos personales</span>
+
+                <!-- NOMBRE -->
+                <div class="contenedor-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text"
+                           name="nombre"
+                           id="nombre"
+                           placeholder="Nombre"
+                           required>
+                </div>
+
+                <!-- APELLIDO -->
+                <div class="contenedor-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text"
+                           name="apellido"
+                           id="apellido"
+                           placeholder="Apellido"
+                           required>
+                </div>
+
+                <!-- TELÉFONO -->
+                <div class="contenedor-input">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="text"
+                           name="telefono"
+                           id="telefono"
+                           placeholder="Teléfono"
+                           required>
+                </div>
+
+                <!-- CORREO -->
+                <div class="contenedor-input">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email"
+                           name="correo"
+                           id="correo"
+                           placeholder="Correo electrónico"
+                           required>
+                </div>
+
+                <!-- DIRECCIÓN -->
+                <div class="contenedor-input">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <input type="text"
+                           name="direccion"
+                           id="direccion"
+                           placeholder="Dirección"
+                           required>
+                </div>
+
+                <!-- CONTRASEÑA -->
+                <div class="contenedor-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password"
+                           name="password"
+                           id="password"
+                           placeholder="Contraseña"
+                           required>
+                </div>
+
+                <!-- CONFIRMAR -->
+                <div class="contenedor-input">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password"
+                           name="confirmar"
+                           id="confirmar"
+                           placeholder="Confirmar contraseña"
+                           required>
+                </div>
+
+                <!-- BOTÓN -->
+                <button type="submit" class="boton-principal">
+                    REGISTRARSE
+                </button>
+
+                <!-- LINK A LOGIN -->
+                <button type="button"
+                        class="boton-cambio"
+                        onclick="window.location.href='login.html'">
+                    ¿Ya tienes cuenta? Inicia sesión
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+
+    <footer>
+        <div class="seccion-footer">
+            <div class="div-footer">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
+            </div>
+
+            <div class="div-footer">
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
+            </div>
+
+            <div class="div-footer">
+                <h5>Ayuda</h5>
+                <p>Términos y condiciones</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 D'CHIO</p>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="scriptDchio.js"></script>
+        <script src="pedido.js"></script>
+        <script src="index.js"></script>
+        <script src="perfil.js"></script>
+</body>
+</html>
+

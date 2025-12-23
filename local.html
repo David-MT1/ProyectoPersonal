@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=123.0">
     <title>D'CHIO</title>
-    <link rel =" icon" type="image/png" href="Imágenes/loguitoDchio.png">
+    <link rel =" icon" type="image/png" href="Imagenes/loguitoDchio.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="Imágenes/bannerDchio-Editado.png" alt="logo">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
             </a>
         </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
 
         <nav class="seccion-nav">
             <ul class="links-nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="promociones.html">Promociones</a></li>
                 <li><a href="local.html">Local</a></li>
-                </ul>
+            </ul>
         </nav>
 
         <div class="header-right">
@@ -31,24 +36,27 @@
 
             <a id="perfil-usuario" href="registro.html" class="icon-link">
                 <ion-icon name="person-circle-outline"></ion-icon>
-                <span id="texto-perfil" style="font-size: 14px; margin-left: 5px;">Ingresar</span>
+                <span id="texto-perfil">Ingresar</span>
             </a>
         </div>
     </header>
-    <main class="main-local">
-    
-    <section class="item-map-container">
-        <div class="item-map-local">
-            <div class="texto-info">
-                <h3>¡Estamos ubicados en Cayma!</h3>
-                <p>Av. Aviación 1011 - Francisco Bolognesi (Cayma)</p>
+<main class="main-local">
+    <section class="bloque-principal-local">
+        <div class="tarjeta-mapa-superior">
+            <div class="info-texto-local">
+                <span class="etiqueta-viva">¡VISÍTANOS!</span>
+                <h3>Cayma, Arequipa</h3>
+                <p>Av. Aviación 1011 - Francisco Bolognesi</p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.81183054124043!2d-71.5428027094738!3d-16.34501884912666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424900602646c5%3A0x6140229f2ba0135c!2sD&#39;CHIO!5e0!3m2!1ses!2spe!4v1763559395697!5m2!1ses!2spe" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            
+            <div class="marco-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.81183054124043!2d-71.5428027094738!3d-16.34501884912666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424900602646c5%3A0x6140229f2ba0135c!2sD'CHIO!5e0!3m2!1ses!2spe!4v1763559395697!5m2!1ses!2spe" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
         </div>
 
-        <div class="item-info-local">
-            <img id="imagen-banner" src="Imágenes/bannerDchio.png" alt="bannerDchio">
-        </div>   
+        <div class="tarjeta-imagen-inferior">
+            <img src="Imagenes/bannerDchio.png" alt="bannerDchio">
+        </div>
     </section>
 
     <section class="section-dudas">
@@ -61,8 +69,7 @@
                     <ion-icon name="chevron-down-outline" class="icono-abrir"></ion-icon>
                 </summary>
                 <div class="panel-contenido-local">
-                    <p>Atendemos todos los días de <strong>12:00 p.m. a 10:00 p.m.</strong><br>
-                    (Algunos días el horario puede variar según afluencia).</p>
+                    <p>Atendemos todos los días de <strong>12:00 p.m. a 10:00 p.m.</strong> (Algunos días el horario puede variar según afluencia).</p>
                 </div>
             </details>
 
@@ -72,7 +79,7 @@
                     <ion-icon name="chevron-down-outline" class="icono-abrir"></ion-icon>
                 </summary>
                 <div class="panel-contenido-local">
-                    <p>Aceptamos Efectivo, Visa, MasterCard, Yape y Plin.</p>
+                    <p>Aceptamos Efectivo, Visa, MasterCard, Yape y Plin. ¡Todo rápido!</p>
                 </div>
             </details>
 
@@ -87,44 +94,30 @@
             </details>
         </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </main>
     <footer>
         <div class="seccion-footer">
             <div class="div-footer">
-                <img src="Imágenes/bannerDchio-Editado.png" alt="logo" >
-                <h5>Contátate con nosotros</h5>
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
             </div>
-            <div class="div-footer">
-                <dl>
-                    <dt>Nuestros Productos</dt>
-                    <dd>Personales</dd>
-                    <dd>Familiares</dd>
-                    <dd>Banquetes</dd>
-                    <dd>D'CHIO Night</dd>
-                </dl>
 
-            </div>
             <div class="div-footer">
-                <dl>
-                    <dt>Ayuda</dt>
-                    <dd>Politica de la Tienda</dd>
-                    <dd>Terminos y Condiciones</dd>
-                    <dd>Nuestro local</dd>
-                </dl>
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
             </div>
+
             <div class="div-footer">
-                <h3>Libro de reclamaciones</h3>
-                <h3>Metodos de pago</h3>
+                <h5>Ayuda</h5>
+                <p>Términos y condiciones</p>
             </div>
         </div>
-        <br>
-        <p>© 2024 D'CHIO. Todos los derechos reservados.</p>
-        <br>
 
+        <p class="copyright">© 2024 D'CHIO</p>
     </footer>
-    
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptDchio.js"></script>
+    <script src="index.js"></script>
+    <script src="pedido.js"></script>
 </body>
 </html>

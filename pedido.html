@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - D'CHIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="logo">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="boton-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+
+        <nav class="seccion-nav">
+            <ul class="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="local.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a id="carrito" href="pedido.html" class="icon-link">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span id="cart-count">0</span>
+            </a>
+
+            <a id="perfil-usuario" href="registro.html" class="icon-link">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span id="texto-perfil">Ingresar</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="contenedor-pedido-final">
+        <h1>Mi Pedido</h1>
+        
+        <div class="grid-pedido">
+            <div id="lista-productos-carrito" class="lista-items">
+                </div>
+
+            <div class="resumen-confirmacion">
+                <h3>Resumen de Entrega</h3>
+                <div class="dato-entrega">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <div>
+                        <p><strong>Dirección de entrega:</strong></p>
+                        <p id="direccion-entrega">Inicia sesión para ver tu dirección</p>
+                    </div>
+                </div>
+                
+                <div class="total-caja">
+                    <span>Total a pagar:</span>
+                    <h2 id="total-final">S/ 0.00</h2>
+                </div>
+
+                <button id="btn-confirmar-pedido" class="boton-confirmar">
+                    CONFIRMAR PEDIDO <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="seccion-footer">
+            <div class="div-footer">
+                <img src="Imagenes/bannerDchio-Editado.png" alt="Logo D'CHIO">
+            </div>
+
+            <div class="div-footer">
+                <h5>Nuestros productos</h5>
+                <p>Personales · Familiares · Banquetes</p>
+            </div>
+
+            <div class="div-footer">
+                <h5>Ayuda</h5>
+                <p>Términos y condiciones</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 D'CHIO</p>
+    </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="scriptDchio.js"></script>
+        <script src="pedido.js"></script>
+        <script src="index.js"></script>
+        <script src="perfil.js"></script>
+</body>
+</html>
