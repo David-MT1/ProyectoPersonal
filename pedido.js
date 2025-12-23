@@ -1,7 +1,6 @@
 function agregarAlCarrito(id, nombre, precio) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     
-    // Buscar si ya existe para sumar cantidad
     const existe = carrito.find(item => item.id === id);
     if (existe) {
         existe.cantidad++;
@@ -11,7 +10,6 @@ function agregarAlCarrito(id, nombre, precio) {
 
     localStorage.setItem('carrito', JSON.stringify(carrito));
     
-    // Actualizar el numerito del carrito (ID: cart-count)
     const countSpan = document.getElementById('cart-count');
     if (countSpan) {
         const totalItems = carrito.reduce((acc, item) => acc + item.cantidad, 0);
@@ -27,7 +25,6 @@ function actualizarContadorCarrito() {
     if (countSpan) countSpan.innerText = carrito.length;
 }
 
-// --- CARGAR RESUMEN EN PEDIDO.HTML ---
 function cargarResumenPedido() {
     const listaContenedor = document.getElementById('lista-productos-carrito');
     if (!listaContenedor) return;
@@ -49,7 +46,6 @@ function cargarResumenPedido() {
     if (totalContenedor) totalContenedor.innerText = `S/ ${total.toFixed(2)}`;
 }
 
-// --- BOTÓN CONFIRMAR PEDIDO ---
 async function confirmarPedidoFinal() {
     const idUsuario = localStorage.getItem('usuario_id');
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -73,7 +69,6 @@ async function confirmarPedidoFinal() {
     window.location.href = "index.html";
 }
 
-// --- INICIO ---
 document.addEventListener("DOMContentLoaded", () => {
     inicializarUsuario();
     cargarProductos();
